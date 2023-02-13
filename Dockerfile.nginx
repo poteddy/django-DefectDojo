@@ -5,7 +5,7 @@
 # Dockerfile.django to use the caching mechanism of Docker.
 
 # Ref: https://devguide.python.org/#branchstatus
-FROM python:3.8.14-slim-bullseye@sha256:8ae28a791362432b0303d485f4c9fc16479a3254f311728989e23173da9f3341 as base
+FROM python:3.11.2-slim-bullseye@sha256:28e5366ce5c423639950d3962b668730535da08cd235bdacef32171e26cd2b5c as base
 FROM base as build
 WORKDIR /app
 RUN \
